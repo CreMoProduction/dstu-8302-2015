@@ -1,36 +1,36 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" default-locale="uk-UA">
   <!-- This style was edited with the Visual CSL Editor (http://editor.citationstyles.org/visualEditor/) -->
   <info>
     <title>DSTU 8302-2015</title>
-    <id>http://www.zotero.org/styles/dstu-8302-2015</id>
-    <link href="http://www.zotero.org/styles/dstu-8302-2015" rel="self"/>
+    <id>https://github.com/CreMoProduction/dstu-8302-2015</id>
+    <link href="https://github.com/CreMoProduction/dstu-8302-2015" rel="self"/>
     <author>
-      <name>Mykhailo Shevchuk</name>
-      <email>mail@mshevchuk.com</email>
-      <uri>https://github.com/myshevchuk/dstu-csl</uri>
+      <name>Alex Ilchenko</name>
+      <email></email>
+      <uri>https://github.com/CreMoProduction/dstu-8302-2015</uri>
     </author>
     <category citation-format="numeric"/>
     <category field="generic-base"/>
     <summary>Citation style according to new DSTU 8302-2015 requirements.</summary>
-    <updated>2017-12-10T10:13:36+00:00</updated>
+    <updated>2024-05-05T19:27:12+00:00</updated>
     <rights>This work is licensed under a Creative Commons Attribution-Share Alike 4.0 License: http://creativecommons.org/licenses/by-sa/4.0/</rights>
   </info>
   <locale>
     <terms>
       <term name="et-al-none"/>
       <term name="editor">ред. </term>
-      <term name="et-al"> та ін.</term>
+      <term name="et-al">et al.</term>
       <term name="page" form="short">
-        <single>С. </single>
-        <multiple>С. </multiple>
+        <single>P. </single>
+        <multiple>P. </multiple>
       </term>
       <term name="number-of-pages">
-        <single> с.</single>
-        <multiple> с.</multiple>
+        <single> p.</single>
+        <multiple> p.</multiple>
       </term>
-      <term name="volume" form="short">Вип. </term>
-      <term name="issue" form="short">№ </term>
+      <term name="volume" form="short">Vol. </term>
+      <term name="issue" form="short">N </term>
       <term name="editor" form="short">
         <single>Ред. </single>
         <multiple>Ред. </multiple>
@@ -51,7 +51,7 @@
       <et-al term="et-al"/>
       <substitute>
         <names variable="editor">
-          <name initialize-with=". " et-al-min="5" et-al-use-first="3" prefix="ed. "/>
+          <name initialize-with=". " et-al-min="4" et-al-use-first="4" prefix="ed. "/>
           <et-al term="et-al"/>
         </names>
       </substitute>
@@ -60,14 +60,14 @@
   <macro name="translator">
     <names variable="translator">
       <label variable="translator" form="short"/>
-      <name name-as-sort-order="all" sort-separator=" " initialize-with=". " et-al-min="5" et-al-use-first="3"/>
+      <name name-as-sort-order="all" sort-separator=" " initialize-with=". " et-al-min="3" et-al-use-first="2"/>
       <et-al term="et-al"/>
     </names>
   </macro>
   <macro name="editor">
     <names variable="editor">
       <label variable="editor" form="short"/>
-      <name name-as-sort-order="all" sort-separator=" " initialize-with=". " et-al-min="5" et-al-use-first="3" delimiter-precedes-last="never"/>
+      <name name-as-sort-order="all" sort-separator=" " initialize-with=". " et-al-min="4" et-al-use-first="3" delimiter-precedes-last="never"/>
       <et-al term="et-al"/>
     </names>
   </macro>
@@ -122,9 +122,9 @@
       <text variable="citation-number"/>
     </layout>
   </citation>
-  <bibliography hanging-indent="true" second-field-align="margin">
+  <bibliography et-al-min="4" et-al-use-first="4" hanging-indent="true" second-field-align="margin">
     <sort>
-      <key variable="citation-number"/>
+      <key variable="author"/>
     </sort>
     <layout suffix=".">
       <text variable="citation-number" suffix=". "/>
